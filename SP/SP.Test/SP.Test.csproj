@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SistemaGestionePratiche\SP.csproj" />
+    <ProjectReference Include="..\SP\SP.csproj" />
   </ItemGroup>
 
 </Project>
