@@ -53,6 +53,11 @@ namespace SP.Logic
                     return;
                 }
 
+                if (existingPratica.StatoPratica != StatoPratica.Created)
+                {
+                    throw new Exception("cannot update pratica, already working");
+                }
+
                 existingPratica.Utente = updatedPratica.Utente;
                 existingPratica.AllegatoPratica = updatedPratica.AllegatoPratica;
 
